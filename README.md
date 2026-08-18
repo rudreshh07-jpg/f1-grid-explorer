@@ -9,6 +9,85 @@
 ![SQLite](https://img.shields.io/badge/SQLite-Database-003B57?logo=sqlite&logoColor=white)
 
 ---
+# 🖥️ Application Preview
+
+## 🏠 Home
+
+The landing page provides an overview of the current Formula Racing season and provides quick access to the major sections of the application.
+
+![GRID Home](screenshots/home.png)
+
+---
+
+## 👨‍🏎️ Current Drivers
+
+The Drivers section provides searchable current-driver information with interactive driver cards and detailed profiles.
+
+![GRID Drivers](screenshots/drivers.png)
+
+---
+
+## 🏢 Teams
+
+The Teams section presents current constructors with driver lineups, power-unit information, championship records and team details.
+
+![GRID Teams](screenshots/teams.png)
+
+---
+
+## 🏁 Circuits
+
+Circuit pages provide structured circuit information including location, distance, laps, turns, records and circuit-specific guidance.
+
+![GRID Circuit](screenshots/circuits.png)
+
+---
+
+## 🏆 Championships
+
+The Championships section presents World Drivers' and Constructors' Championship history chronologically.
+
+![GRID Championships](screenshots/championships.png)
+
+---
+
+## 🗄️ F1 Archive
+
+The archive separates historical drivers, constructors and circuits from the current grid.
+
+![GRID F1 Archive](screenshots/archive.png)
+
+---
+
+## 📜 F1 History
+
+The History section presents important Formula Racing milestones through an interactive timeline.
+
+![GRID History](screenshots/history.png)
+
+---
+
+## 🛞 Strategy & Tyres
+
+The Strategy & Tyres section explains tyre types, compounds and race strategies in a beginner-friendly format.
+
+![GRID Strategy and Tyres](screenshots/strategy-tyres.png)
+
+---
+
+## 📖 F1 Glossary
+
+The glossary provides searchable explanations of Formula Racing terminology with interactive detail panels.
+
+![GRID Glossary](screenshots/glossary.png)
+
+---
+
+## 🔐 Admin Dashboard
+
+The administrative interface provides protected database-backed content management, synchronization controls and record editing.
+
+![GRID Admin](screenshots/admin.png)
 
 ## 📌 Overview
 
