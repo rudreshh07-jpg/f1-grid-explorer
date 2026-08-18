@@ -1,0 +1,37 @@
+{
+  "name": "f1-grid-explorer",
+  "private": true,
+  "version": "4.8.0",
+  "scripts": {
+    "dev": "concurrently \"npm run dev:client\" \"npm run dev:server\"",
+    "dev:client": "vite --host 0.0.0.0",
+    "dev:server": "node server/index.js",
+    "build": "npm run build:client",
+    "build:client": "vite build",
+    "start": "node server/index.js",
+    "seed": "node server/seed.js",
+    "sync:archive": "node server/sync-archive.js",
+    "db:seed": "node server/seed.js",
+    "admin": "echo Open http://localhost:5173/admin",
+    "enrich:archive": "node server/enrich-archive.js"
+  },
+  "dependencies": {
+    "concurrently": "^9.2.1",
+    "express": "^5.1.0",
+    "lucide-react": "^0.468.0",
+    "react": "^19.1.1",
+    "react-dom": "^19.1.1",
+    "react-router-dom": "^7.8.2",
+    "mongoose": "^8.18.0",
+    "cors": "^2.8.5",
+    "adm-zip": "^0.5.16"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^5.0.2",
+    "vite": "^7.1.2"
+  },
+  "type": "module",
+  "engines": {
+    "node": ">=22.5.0"
+  }
+}
