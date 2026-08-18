@@ -31,7 +31,7 @@ The Drivers section provides searchable current-driver information with interact
 
 The Teams section presents current constructors with driver lineups, power-unit information, championship records and team details.
 
-![GRID Teams](screenshots/teams.png)
+![GRID Teams](screenshots/team.png)
 
 ---
 
@@ -39,7 +39,7 @@ The Teams section presents current constructors with driver lineups, power-unit 
 
 Circuit pages provide structured circuit information including location, distance, laps, turns, records and circuit-specific guidance.
 
-![GRID Circuit](screenshots/circuits.png)
+![GRID Circuit](screenshots/circuitsdetails.png)
 
 ---
 
@@ -47,7 +47,7 @@ Circuit pages provide structured circuit information including location, distanc
 
 The Championships section presents World Drivers' and Constructors' Championship history chronologically.
 
-![GRID Championships](screenshots/championships.png)
+![GRID Championships](screenshots/championship.png)
 
 ---
 
@@ -55,7 +55,7 @@ The Championships section presents World Drivers' and Constructors' Championship
 
 The archive separates historical drivers, constructors and circuits from the current grid.
 
-![GRID F1 Archive](screenshots/archive.png)
+![GRID F1 Archive](screenshots/f1archive.png)
 
 ---
 
@@ -71,7 +71,9 @@ The History section presents important Formula Racing milestones through an inte
 
 The Strategy & Tyres section explains tyre types, compounds and race strategies in a beginner-friendly format.
 
-![GRID Strategy and Tyres](screenshots/strategy-tyres.png)
+![GRID Strategy and Tyres](screenshots/Stratergies.png)
+
+![GRID Strategy and Tyres](screenshots/tyres.png)
 
 ---
 
@@ -88,6 +90,8 @@ The glossary provides searchable explanations of Formula Racing terminology with
 The administrative interface provides protected database-backed content management, synchronization controls and record editing.
 
 ![GRID Admin](screenshots/admin.png)
+
+![GRID Admin](screenshots/adminaccess.png).
 
 ## 📌 Overview
 
