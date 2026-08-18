@@ -39,7 +39,7 @@ The Teams section presents current constructors with driver lineups, power-unit 
 
 Circuit pages provide structured circuit information including location, distance, laps, turns, records and circuit-specific guidance.
 
-![GRID Circuit](screenshots/circuitsdetails.png)
+![GRID Circuit](screenshots/circuitdetails.png)
 
 ---
 
@@ -55,7 +55,7 @@ The Championships section presents World Drivers' and Constructors' Championship
 
 The archive separates historical drivers, constructors and circuits from the current grid.
 
-![GRID F1 Archive](screenshots/f1archive.png)
+![GRID F1 Archive](screenshots/f1archieve.png)
 
 ---
 
