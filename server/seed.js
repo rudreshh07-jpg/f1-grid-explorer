@@ -280,7 +280,7 @@ const CIRCUIT_META = {
   23:{openedYear:2009,firstGrandPrix:2009,famousCorners:"Turn 5 and the final technical sector",description:"Yas Marina balances long straights and heavy braking with a technical final sector.",fastestLapTime:"1:25.637",fastestLapDriver:"Kevin Magnussen",fastestLapYear:2024},
 }
 const currentCircuitRows=getContent('circuits')
-CURRENT_CIRCUITS.forEach((x,i)=>{const [country,flag,name,city,date,length,laps,distance,turns,sprint]=x;const meta=CIRCUIT_META[i+1]||{};const id=String(i+1);const existing=currentCircuitRows.find(c=>String(c.id)===id);const value={id,round:i+1,country,flag,name,city,date,length,laps,distance,turns,sprint,eventName:name==='Sepang International Circuit'?'Gulf Air Bahrain Grand Prix in Malaysia':`${country} Grand Prix`,officialSlug:name==='Sepang International Circuit'?'bahrain':undefined,...meta,records:existing?.records||{}};if(!existing||!existing.layoutSvg||!existing.description)putContent('circuits',id,{...(existing||{}),...value})})
+CURRENT_CIRCUITS.forEach((x,i)=>{const [country,flag,name,city,date,length,laps,distance,turns,sprint]=x;const meta=CIRCUIT_META[i+1]||{};const id=String(i+1);const existing=currentCircuitRows.find(c=>String(c.id)===id);const value={id,round:i+1,country,flag,name,city,date,length,laps,distance,turns,sprint,eventName:name==='Sepang International Circuit'?'Gulf Air Bahrain Grand Prix in Malaysia':`${country} Grand Prix`,officialSlug:name==='Sepang International Circuit'?'bahrain':undefined,...meta,records:existing?.records||{}};if(!existing||!existing.description)putContent('circuits',id,{...(existing||{}),...value})})
 
 
 // Add beginner-oriented circuit context without replacing the core circuit facts.
