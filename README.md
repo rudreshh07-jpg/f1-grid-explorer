@@ -754,36 +754,59 @@ Driver and circuit visual areas use original typography-based UI elements.
 
 ---
 
-# 📊 Data Sources
+# 📚 Data Attribution
 
-The application uses publicly available/open Formula Racing datasets and APIs for structured historical and statistical information.
-
-Current project data sources include:
-
-### Jolpica F1 API
-
-Used for structured Formula Racing data where applicable.
+GRID — Formula Racing Explorer uses publicly available Formula Racing data from third-party open-data projects and APIs.
 
 ### F1DB
 
-Used for historical Formula Racing database information where applicable.
+Historical Formula Racing data is sourced from F1DB where applicable.
+
+F1DB is an open-source Formula 1 database licensed under the Creative Commons Attribution 4.0 International License (CC BY 4.0).
+
+Source:
+https://github.com/f1db/f1db
+
+License:
+https://creativecommons.org/licenses/by/4.0/
+
+### Jolpica F1
+
+Current and historical statistical data may be retrieved through the Jolpica F1 API.
+
+Jolpica F1 provides Formula 1 data under its published terms for non-commercial use and the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License (CC BY-NC-SA 4.0).
+
+Source:
+https://github.com/jolpica/jolpica-f1
+
+Terms:
+https://github.com/jolpica/jolpica-f1/blob/main/TERMS.md
 
 ### Ergast-derived Open Dataset
 
-The archive enrichment process uses an open dataset containing information such as:
+Historical archive enrichment also uses datasets derived from the Ergast Developer API through the following open dataset repository:
 
-- Driver information
-- Driver nationality
-- Driver date of birth
-- Constructor information
-- Constructor nationality
-- Circuit information
-- Race history
+https://github.com/muharsyad/formula-one-datasets
 
-External data sources remain separate from the application's original interface and application code.
+The dataset repository acknowledges the Ergast Developer API and Formula One Management as sources of the underlying data.
 
-> External data licences and terms can change. Always check the current terms of each source before commercial redistribution or deployment.
+### Original Project Content
 
+The following are original parts of this portfolio project:
+
+- User interface design
+- React components
+- CSS styling
+- Application architecture
+- Database integration
+- REST API integration
+- Search and filtering functionality
+- Administrative interface
+- Educational presentation structure
+- Typography-based visual system
+- Project documentation
+
+Third-party names, trademarks and data remain the property of their respective owners.
 ---
 
 # ⚠️ Independence Notice
