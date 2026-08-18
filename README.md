@@ -751,30 +751,6 @@ The application is designed to remain lightweight by:
 - Keeping circuit visuals text-based
 - Reusing database records instead of duplicating data in the UI
 
-The absence of large photographic assets helps reduce the application's initial page weight.
-
----
-
-# 🔮 Future Improvements
-
-Potential future improvements include:
-
-- PostgreSQL support
-- Docker deployment
-- Cloud deployment
-- Automated testing
-- CI/CD pipeline
-- API documentation
-- Advanced driver analytics
-- Driver performance comparisons
-- Constructor performance analytics
-- Historical championship comparisons
-- Database backups
-- Advanced search filters
-- Performance monitoring
-- Automated integration tests
-
----
 
 # 🧪 Development Commands
 
@@ -834,7 +810,7 @@ The project demonstrates practical experience with both frontend and backend dev
 
 # 👨‍💻 Author
 
-## Rudresh G
+## G Naga Rudresh
 
 Computer Science Engineering Student
 
