@@ -201,8 +201,6 @@ select,select option{background-color:#14161a!important;color:#f6f6f7!important;
 .footer strong{letter-spacing:-.04em}
 .footer .independent-note{color:#8d939c}
 
-/* Keep every licensed circuit schematic fully inside its visual window.
-   The layout is a schematic, not a photograph. */
 .circuit-map{
   height:320px!important;
   overflow:hidden!important;
