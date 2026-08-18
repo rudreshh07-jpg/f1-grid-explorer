@@ -2,11 +2,11 @@
 
 > An independent full-stack Formula Racing explorer built with React, Vite, Node.js, Express and SQLite.
 
-[![React](https://img.shields.io/badge/React-Frontend-61DAFB?logo=react&logoColor=black)](https://react.dev/)
-[![Vite](https://img.shields.io/badge/Vite-Build-646CFF?logo=vite&logoColor=white)](https://vite.dev/)
-[![Node.js](https://img.shields.io/badge/Node.js-Backend-339933?logo=node.js&logoColor=white)](https://nodejs.org/)
-[![Express](https://img.shields.io/badge/Express-API-000000?logo=express&logoColor=white)](https://expressjs.com/)
-[![SQLite](https://img.shields.io/badge/SQLite-Database-003B57?logo=sqlite&logoColor=white)](https://www.sqlite.org/)
+![React](https://img.shields.io/badge/React-Frontend-61DAFB?logo=react&logoColor=black)
+![Vite](https://img.shields.io/badge/Vite-Build-646CFF?logo=vite&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-Backend-339933?logo=node.js&logoColor=white)
+![Express](https://img.shields.io/badge/Express-API-000000?logo=express&logoColor=white)
+![SQLite](https://img.shields.io/badge/SQLite-Database-003B57?logo=sqlite&logoColor=white)
 
 ---
 
@@ -20,7 +20,8 @@ The application brings together current and historical Formula Racing informatio
 - Teams / Constructors
 - Circuits
 - Championships
-- F1 history
+- F1 History
+- F1 Archive
 - Racing terminology
 - Tyres
 - Strategy
@@ -30,7 +31,18 @@ The application brings together current and historical Formula Racing informatio
 - Historical archives
 - Administrative data management
 
-The project was built to demonstrate practical experience with frontend development, backend development, database design, REST APIs, authentication, data processing and interactive UI/UX.
+The project was built to demonstrate practical experience with:
+
+- Frontend development
+- Backend development
+- Database design
+- REST API development
+- Authentication
+- Data processing
+- Data synchronization
+- Search and filtering
+- Interactive UI/UX
+- Historical data management
 
 > **GRID is an independent educational and portfolio project. It is not affiliated with, endorsed by, sponsored by, or operated by Formula 1, the FIA, or any Formula 1 team.**
 
@@ -381,3 +393,494 @@ Create a local `.env` file:
 ADMIN_USERNAME=admin
 ADMIN_PASSWORD=your-strong-password
 APP_ORIGIN=http://localhost:5173
+```
+
+Use a strong password.
+
+**Never commit `.env` to GitHub.**
+
+---
+
+# 🧠 Application Architecture
+
+```text
+                    ┌──────────────────────┐
+                    │    React + Vite      │
+                    │      Frontend        │
+                    └──────────┬───────────┘
+                               │
+                               │ REST API
+                               ▼
+                    ┌──────────────────────┐
+                    │   Node.js + Express  │
+                    │      Backend API      │
+                    └──────────┬───────────┘
+                               │
+                               ▼
+                    ┌──────────────────────┐
+                    │       SQLite         │
+                    │       Database       │
+                    └──────────┬───────────┘
+                               │
+                    ┌──────────▼───────────┐
+                    │  Data Synchronization│
+                    │   & Archive Tools    │
+                    └──────────────────────┘
+```
+
+---
+
+# 🛠️ Technology Stack
+
+## Frontend
+
+- React
+- Vite
+- JavaScript
+- React Router
+- CSS
+- Lucide React
+
+## Backend
+
+- Node.js
+- Express.js
+- REST API
+- CORS
+
+## Database
+
+- SQLite
+- Relational data storage
+- Persistent application records
+- Historical archive records
+
+## Security
+
+- Node.js Crypto APIs
+- Password hashing
+- Session authentication
+- Login rate limiting
+- Security headers
+- Environment variables
+
+## Development Tools
+
+- Git
+- GitHub
+- npm
+- VS Code
+
+---
+
+# 📂 Project Structure
+
+```text
+f1-grid-explorer/
+│
+├── src/
+│   ├── main.jsx
+│   └── styles.css
+│
+├── server/
+│   ├── index.js
+│   ├── db.js
+│   ├── data.js
+│   ├── seed.js
+│   ├── sync-archive.js
+│   └── enrich-archive.js
+│
+├── public/
+│
+├── index.html
+├── package.json
+├── package-lock.json
+├── vite.config.js
+├── .env.example
+├── .gitignore
+└── README.md
+```
+
+---
+
+# ⚙️ Installation
+
+## 1. Clone the repository
+
+```bash
+git clone https://github.com/rudreshh07-jpg/f1-grid-explorer.git
+```
+
+## 2. Open the project
+
+```bash
+cd f1-grid-explorer
+```
+
+## 3. Install dependencies
+
+```bash
+npm install
+```
+
+---
+
+# 🔧 Environment Configuration
+
+Create a local `.env` file using `.env.example` as a reference.
+
+Example:
+
+```env
+ADMIN_USERNAME=admin
+ADMIN_PASSWORD=your-strong-password-here
+APP_ORIGIN=http://localhost:5173
+```
+
+Do not commit the `.env` file.
+
+---
+
+# ▶️ Running the Application
+
+Start the frontend and backend together:
+
+```bash
+npm run dev
+```
+
+The frontend will be available at:
+
+```text
+http://localhost:5173
+```
+
+The backend API will run at:
+
+```text
+http://localhost:4000
+```
+
+---
+
+# 🗃️ Database
+
+SQLite is used as the application's primary database.
+
+The database stores structured information for:
+
+```text
+Drivers
+Teams / Constructors
+Circuits
+Championships
+Historical Archive
+Glossary
+Tyres
+Strategies
+Flags
+Sessions
+Rules
+History
+Admin Users
+```
+
+The backend provides access to the database through REST API endpoints.
+
+---
+
+# 🔄 Archive Enrichment
+
+Historical archive information can be refreshed using:
+
+```bash
+npm run enrich:archive
+```
+
+The enrichment process updates available metadata for:
+
+- Historical drivers
+- Historical constructors
+- Historical circuits
+
+The information is stored in the application's database.
+
+If information is unavailable from the selected data source, the application should indicate that it is unavailable rather than intentionally fabricating a value.
+
+---
+
+# 🔁 Data Synchronization
+
+The application includes a backend synchronization layer for structured racing data.
+
+The general process is:
+
+```text
+Open / Public Data
+        ↓
+Data Synchronization
+        ↓
+Validation
+        ↓
+Deduplication
+        ↓
+Database
+        ↓
+Express REST API
+        ↓
+React Interface
+```
+
+This separates data processing from the frontend interface.
+
+---
+
+# 🔍 Search
+
+The application includes interactive search functionality.
+
+Search suggestions can be displayed while typing and users can select a suggestion to navigate to the corresponding:
+
+- Driver
+- Team
+- Circuit
+
+Search results are connected to the application's backend and database.
+
+---
+
+# 🎨 UI / UX
+
+The application uses a permanent dark interface.
+
+Design goals include:
+
+- Clear information hierarchy
+- Consistent typography
+- High contrast
+- Responsive layouts
+- Interactive cards
+- Detail popups
+- Beginner-friendly information
+- Fast navigation
+- Consistent visual language
+
+The application intentionally does not rely on driver photographs, team photographs or circuit photographs.
+
+Driver and circuit visual areas use original typography-based UI elements.
+
+---
+
+# 📊 Data Sources
+
+The application uses publicly available/open Formula Racing datasets and APIs for structured historical and statistical information.
+
+Current project data sources include:
+
+### Jolpica F1 API
+
+Used for structured Formula Racing data where applicable.
+
+### F1DB
+
+Used for historical Formula Racing database information where applicable.
+
+### Ergast-derived Open Dataset
+
+The archive enrichment process uses an open dataset containing information such as:
+
+- Driver information
+- Driver nationality
+- Driver date of birth
+- Constructor information
+- Constructor nationality
+- Circuit information
+- Race history
+
+External data sources remain separate from the application's original interface and application code.
+
+> External data licences and terms can change. Always check the current terms of each source before commercial redistribution or deployment.
+
+---
+
+# ⚠️ Independence Notice
+
+**GRID — Formula Racing Explorer is an independent educational and portfolio project.**
+
+This project:
+
+- Is not an official Formula 1 website
+- Is not affiliated with Formula 1
+- Is not endorsed by Formula 1
+- Is not sponsored by Formula 1
+- Is not affiliated with the FIA
+- Is not affiliated with any Formula 1 team
+
+Formula Racing terminology is used solely to describe the subject matter of the application.
+
+No claim of ownership is made over third-party names, trademarks or data.
+
+---
+
+# 🚫 Media & Branding
+
+The project intentionally avoids using:
+
+- Driver photographs
+- Team photographs
+- Circuit photographs
+- Official Formula 1 graphics
+- Official Formula 1 screenshots
+- Official Formula 1 editorial articles
+- Official Formula 1 logos
+- Official Formula 1 fonts
+- Circuit layout graphics
+
+The visual design and educational explanations are developed as part of this independent portfolio project.
+
+---
+
+# 📈 Performance Considerations
+
+The application is designed to remain lightweight by:
+
+- Using SQLite for local structured data
+- Separating frontend and backend responsibilities
+- Loading data through REST APIs
+- Avoiding large image assets
+- Keeping circuit visuals text-based
+- Reusing database records instead of duplicating data in the UI
+
+The absence of large photographic assets helps reduce the application's initial page weight.
+
+---
+
+# 🔮 Future Improvements
+
+Potential future improvements include:
+
+- PostgreSQL support
+- Docker deployment
+- Cloud deployment
+- Automated testing
+- CI/CD pipeline
+- API documentation
+- Advanced driver analytics
+- Driver performance comparisons
+- Constructor performance analytics
+- Historical championship comparisons
+- Database backups
+- Advanced search filters
+- Performance monitoring
+- Automated integration tests
+
+---
+
+# 🧪 Development Commands
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Run the application:
+
+```bash
+npm run dev
+```
+
+Build the frontend:
+
+```bash
+npm run build
+```
+
+Enrich historical archive data:
+
+```bash
+npm run enrich:archive
+```
+
+---
+
+# 📝 Project Purpose
+
+This project was created as a **software engineering portfolio project**.
+
+The purpose is to demonstrate the ability to design and implement a complete data-driven web application rather than simply creating a static webpage.
+
+The main engineering flow is:
+
+```text
+Data Sources
+     ↓
+Data Processing
+     ↓
+Database
+     ↓
+REST API
+     ↓
+Business Logic
+     ↓
+React Components
+     ↓
+Interactive User Interface
+```
+
+The project demonstrates practical experience with both frontend and backend development.
+
+---
+
+# 👨‍💻 Author
+
+## Rudresh G
+
+Computer Science Engineering Student
+
+### Areas of Interest
+
+- Software Engineering
+- Full-Stack Development
+- Backend Development
+- Databases
+- REST APIs
+- Cloud & DevOps
+- Data-driven applications
+
+---
+
+# ⭐ Portfolio Project
+
+This project was developed as an independent portfolio application to demonstrate:
+
+- Full-stack development
+- React application architecture
+- REST API development
+- Database design
+- Data processing
+- Authentication
+- Security practices
+- Interactive UI/UX
+- Historical data management
+- API and data synchronization
+
+---
+
+# 📄 License
+
+The application code in this repository is portfolio-project code created for educational and demonstration purposes.
+
+The repository may also interact with third-party data sources that have their own licences and terms.
+
+Before redistributing, modifying for commercial use, or deploying publicly at scale, review the current terms of the external data sources used by the application.
+
+Third-party names and trademarks remain the property of their respective owners.
+
+---
+
+## ⚠️ Disclaimer
+
+This project is provided for educational and portfolio purposes.
+
+It does not represent an official Formula 1 product, service, database or website.
