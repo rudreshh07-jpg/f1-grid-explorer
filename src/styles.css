@@ -115,28 +115,7 @@ html,body,#root{background:#070809!important;color:#f6f6f7!important;color-schem
 .media-placeholder strong{margin-top:12px;font-size:20px;letter-spacing:-.03em}
 .media-placeholder small{margin-top:5px;color:#aeb4bc;font-size:9px;font-weight:900;letter-spacing:.1em;text-transform:uppercase}
 .driver-photo .media-placeholder,.profile-photo .media-placeholder,.archive-photo .media-placeholder,.team-photo .media-placeholder,.team-hero-photo .media-placeholder{height:100%;width:100%}
-.track-svg{box-sizing:border-box!important;overflow:hidden!important;padding:0!important;display:grid!important;place-items:center!important;min-height:0}
-.track-svg-frame{width:100%!important;height:100%!important;min-width:0!important;min-height:0!important;padding:9%!important;box-sizing:border-box!important;display:grid!important;place-items:center!important;overflow:visible!important}
-.track-svg img{display:block!important;width:100%!important;height:100%!important;max-width:100%!important;max-height:100%!important;object-fit:contain!important;object-position:center!important;padding:0!important;margin:0!important;transform:none!important}
-.track-image.track-svg .track-svg-frame{width:100%!important;height:100%!important;padding:10%!important}
-.archive-track .track-svg-frame{width:100%!important;height:100%!important;padding:10%!important}
-.circuit-map .track-svg-frame{padding:8%!important}
-@media(max-width:850px){.track-svg-frame,.track-image.track-svg .track-svg-frame,.archive-track .track-svg-frame{padding:12%!important}}
 
-
-/* v4.5 — final circuit framing, champion popups and separated tyre taxonomy */
-.circuit-map{height:320px!important;overflow:hidden!important;display:flex!important;align-items:center!important;justify-content:center!important;background:radial-gradient(circle at 50% 50%,#24282e,#0d0f11 72%)!important}
-.circuit-map .track-svg{width:100%!important;height:100%!important;overflow:visible!important;padding:24px 12%!important}
-.circuit-map .track-svg-frame{width:100%!important;height:100%!important;padding:0!important;overflow:visible!important}
-.circuit-map .track-svg img{width:100%!important;height:100%!important;object-fit:contain!important;object-position:center!important;max-width:100%!important;max-height:100%!important}
-.circuit-copy{position:relative!important;z-index:5!important;background:var(--panel)!important;border-top:1px solid rgba(255,255,255,.04)!important}
-.track-layout>.track-image.track-svg{height:560px!important;min-height:560px!important;overflow:visible!important;padding:36px 10%!important;background:radial-gradient(circle at 50% 50%,#24282e,#0d0f11 72%)!important}
-.track-layout>.track-image.track-svg .track-svg-frame{width:100%!important;height:100%!important;padding:0!important;overflow:visible!important}
-.track-layout>.track-image.track-svg img{width:100%!important;height:100%!important;object-fit:contain!important;object-position:center!important}
-.archive-track{height:380px!important;overflow:hidden!important}
-.archive-track .track-svg{height:100%!important;overflow:visible!important;padding:28px 12%!important}
-.archive-track .track-svg-frame{width:100%!important;height:100%!important;padding:0!important;overflow:visible!important}
-.archive-track .track-svg img{width:100%!important;height:100%!important;object-fit:contain!important;object-position:center!important}
 .champion-card{border:1px solid var(--line);color:var(--text);text-align:left;width:100%;cursor:pointer;padding:24px;position:relative;min-height:220px;display:flex;flex-direction:column;align-items:flex-start;justify-content:flex-start}
 .champion-card h2{margin:18px 0 4px;font-size:48px;letter-spacing:-.06em}
 .champion-card p{margin:0;color:#c9cdd3;font-size:18px;font-weight:700}
