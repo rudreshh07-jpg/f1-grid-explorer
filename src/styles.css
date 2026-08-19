@@ -35,13 +35,6 @@ select{color:var(--text);background-color:var(--panel);color-scheme:dark}
 select option{background:#14161a;color:#f6f6f7}
 
 
-/* Keep the complete circuit drawing inside its frame on every viewport. */
-.track-svg{overflow:hidden;display:grid;place-items:center;padding:12px}
-.track-svg img{display:block;width:96%!important;height:96%!important;max-width:96%;max-height:96%;object-fit:contain!important;object-position:center!important;padding:0!important;margin:0;transform:none!important}
-.circuit-card:hover .track-svg img{transform:scale(1.015)!important}
-.track-image.track-svg img{width:96%!important;height:96%!important;max-width:96%;max-height:96%;padding:0!important}
-.archive-track .track-svg img{width:96%!important;height:96%!important;max-width:96%;max-height:96%;padding:0!important}
-
 /* Show the full driver portrait rather than cropping the face/body. */
 .driver-photo .media-image.driver-media{object-fit:contain!important;object-position:center bottom!important;width:100%;height:100%;padding:0;transform:none}
 .profile-photo .media-image.driver-profile-media{object-fit:contain!important;object-position:center bottom!important;width:100%;height:100%;padding:0}
@@ -88,9 +81,6 @@ select option{background:#14161a;color:#f6f6f7}
 .profile-photo .media-image.driver-profile-media{object-fit:cover!important;object-position:50% 18%!important;width:100%;height:100%;padding:0!important;transform:none!important}
 .driver-photo{overflow:hidden}
 .profile-photo{overflow:hidden}
-.track-svg{box-sizing:border-box!important;padding:28px!important}
-.track-svg img{width:100%!important;height:100%!important;max-width:100%!important;max-height:100%!important;object-fit:contain!important;object-position:center!important}
-.track-image.track-svg{padding:24px!important}
 .record-grid.single-record{grid-template-columns:1fr}
 .danger-btn{border-color:rgba(225,6,0,.45)!important;color:#ff7770!important}
 
