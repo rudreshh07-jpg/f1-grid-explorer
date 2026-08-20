@@ -496,7 +496,7 @@ Use a strong password.
                                ▼
                     ┌──────────────────────┐
                     │   Node.js + Express  │
-                    │      Backend API      │
+                    │      Backend API     │
                     └──────────┬───────────┘
                                │
                                ▼
